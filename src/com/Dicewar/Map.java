@@ -1,4 +1,4 @@
-package Projet_DiceWar.src.com.Dicewar;
+package com.dicewar;
 
 public class Map {
     
