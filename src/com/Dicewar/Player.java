@@ -8,7 +8,7 @@ public class Player extends Game{
         this.id = id;
     }
 
-    public void attackTerritory(Territory currentTerritory, Territory targetTerritory)
+    public int attackTerritory(Territory currentTerritory, Territory targetTerritory)
     {
         if(this.id == targetTerritory.playerId || this.id != currentTerritory.playerId)
         {
@@ -37,7 +37,7 @@ public class Player extends Game{
         int sum = 0;
         for(int i = 0; i < nb; i++)
         {
-            sum += 1 + (int)(Math.random() * 6)
+            sum += 1 + (int)(Math.random() * 6);
         }
         return sum;
     }
